@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+body{
+     font-family: "Inter", sans-serif;
+}
+/* ------------share start------------------------- */
+:root{
+    --bg-color:#1A0B2E;
+    --primary-color:#FFFFFF;
+    --secondary-color:#00FF88;
+
+}
+.display-flex{
+    display: flex;
+}
+.btn-primary{
+    background: linear-gradient(
+        25deg, #F7E93F, #FB09B4, #9100F8
+    );
+    padding: 12px 16px;
+    border: none;
+    border-radius:20px; ;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.subscribe{
+    background: transparent;
+    color: #00FF88;
+    border:1px solid #00FF88 ;
+    margin-left: 8px;
+    cursor: pointer;
+}
+/* ------------share end------------------------- */
+/* ------------navbar start------------------------- */
+nav{
+    background: var(--bg-color);
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+.navbar-wreapper{
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-wreapper .item{
+    gap: 32px;
+    list-style: none;
+      font-size: 1rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    line-height: 120%;
+   }
+/* ------------navbar end------------------------- */
+/* ------------banner start------------------------- */
+#banner{
+    background-image: url(./images/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 101px;
+}
+.banner-wrapper{
+   text-align: center;
+   margin: 0 auto;
+}
+.banner-wrapper .images{
+    position: relative;
+}
+.new{
+    position:absolute;
+    top: 35%;
+    right:35%;
+    transform: translate(-35%, -35%);
+}
+.new p{
+    color: #1A0B2E;
+    font-weight: 600;
+    font-style: 1.25rem;
+    background: #00FF88;
+    padding: 8px 16px;
+    border-radius: 16px;
+}
+.banner-wrapper .img{
+    margin-top: 125px;
+    margin-left: 25px;
+} 
+.banner-wrapper .img2{
+    position:absolute;
+    top: 60%;
+    right:38%;
+    transform: translate(-60%, -38%);
+}
+.banner-wrapper h2{
+    font-size: 3.75rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-top: 40px;
+}
+.banner-wrapper p{
+    font-size: 1rem;
+    font-weight: 400;
+    color:var(--primary-color);
+    margin-top: 8px;
+    margin-bottom: 44px;
+}
+/* ------------banner end------------------------- */
+/* ------------About start------------------------- */
+#About{
+    background: var(--bg-color);
+}
+.About-wrapper{
+    text-align: center;
+    }
+    .About-wrapper h1{
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--primary-color);
+        padding-top: 50px;
+         margin-bottom: 16px;
+    }
+    .About-wrapper p{
+        max-width: 790px;
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--primary-color);
+        line-height: 20px;
+        margin: 0 auto;
+    }
+    .About-wrapper .join{
+        max-width: 790px;
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--primary-color);
+        line-height: 20px;
+       margin-top: 20px;
+    }
+     .About-wrapper hr{
+        color: var(--primary-color);
+        margin-top: 50px;
+     }
+     .all-cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 170px;
+        padding-top: 80px;
+     }
+  .card .number{
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--secondary-color);
+    
+     }
+    .card p{
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--primary-color);
+        line-height: 20%;
+        margin-top: 16px;
+        padding-bottom: 130px;
+    }
+/* ------------About end------------------------- */
+/* ------------Featured start------------------------- */
+#Featured{
+    background: var(--bg-color);
+}
+#Featured h1{
+     font-size: 3rem;
+        font-weight: 700;
+        color: var(--primary-color);
+        padding-top: 50px;
+         padding: 120px;
+         text-align: center;
+}
+#Featured .card2{
+    border:1px solid var(--primary-color);
+    max-width:404px;
+    background: #250D44;
+    border-radius:8px;
+    margin-left: 30px;
+   
+}
+#Featured-wrapper .all-card-two {
+    justify-content: space-between;  
+    margin-left: 20px;
+     gap: 20px;
+}
+#Featured iframe .iframe{
+   width: 100%;
+  border-radius: 0 8px 0 8px;
+}
+.card-text{
+    text-align: center;
+    width: 350px;
+}
+#Featured h3{
+     font-size: 1.5rem;
+     width: 335px;
+        font-weight: 700;
+        color: var(--primary-color);
+        padding-top: 24px;
+        
+}
+#Featured p{
+    width: 335px;
+     font-size: 1rem;
+        font-weight: 400;
+        color: var(--primary-color);
+        line-height: 24px;
+        margin-top: 24px;
+        
+      
+}
+#Featured .title {
+    gap: 6px;
+    margin-left: 15px;
+    padding-bottom: 24px;
+}
+#Featured .title img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 25px;
+    left: 0;
+}
+#Featured .title p{
+     font-size: 1rem;
+        font-weight: 400;
+        color: var(--primary-color);
+        line-height: 24px;
+        margin-left: -136px;
+    }
+
+/* ------------Featured end------------------------- */
+/* ------------information start------------------------- */
+#information{
+    background: var(--bg-color);
+    padding: 120px 0;
+}
+#information h2{
+   font-size: 3rem;
+   font-weight: 700;
+   color: var(--primary-color);
+   text-align: center;
+   margin-bottom: 40px;
+}
+.information-wrapper {
+    gap: 24px;
+    color: var(--primary-color);
+    background: #351165;
+    padding: 48px 40px;
+    border-radius: 38px;
+}
+.info h3{
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 16px;
+}
+.info p{
+    max-width: 896px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+.list-item {
+    gap: 8px;
+   
+   }
+.list-item li{
+    list-style: none;
+
+}
+/* ------------information end------------------------- */
+/* ------------footer start------------------------- */
+footer{
+    background: url(./images/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer-wrapper{
+    text-align: center;
+    padding-top: 155px;
+}
+.footer-icon{
+    gap: 40px;
+    justify-content: center;
+    padding-top: 34px;
+    list-style: none;
+    color: aqua;
+}
+.footer-wrapper p{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 32px 0 120px 0;
+    color: var(--primary-color);
+
+} 
+/* ------------footer end------------------------- */
