@@ -82,6 +82,7 @@ nav{
     background-image: url(./images/hero-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding-bottom: 101px;
 }
 .banner-wrapper{
@@ -362,6 +363,7 @@ footer{
     background: url(./images/footer-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 .footer-wrapper{
     text-align: center;
@@ -373,6 +375,7 @@ footer{
     padding-top: 34px;
     list-style: none;
     color: aqua;
+    align-items: center;
 }
 .footer-wrapper p{
     font-size: 1rem;
@@ -396,7 +399,7 @@ footer{
         flex-direction: column;
         gap: 16px;
     }
-    .navbar-wreapper, .item{
+     .item{
         flex-direction: column;
         gap: 12px;
     }
@@ -432,9 +435,6 @@ footer{
 }
 .banner-wrapper h2 {
     margin-top: 25px;
-}
-element.style {
-   
 }
   .button{
     flex-direction:column;
@@ -474,6 +474,72 @@ element.style {
 }
 .grid-color p {
     max-width: 352px;
-    
+    }
+    #Featured h1 {
+    padding: 40px;
+}
+.all-card-two{
+    flex-direction: column;
+    gap: 16px;
+}
+.iframe{
+    width: 400px;
+}
+#Featured h3 {
+    font-size:20px;
+    padding-top: 16px;
+}
+#Featured p {
+    width: 368px;
+    margin-top: 9px;
+}
+#Featured .title img {
+    top: 11px;
+    left: 5px;
+}
+.card2 iframe{
+    width: 400px;
+}
+#Featured h3 {
+    margin-left: 40px;
+}
+#Featured p {
+    margin-left: 25px;
+}
+#Featured .title {
+       margin-left: 19px;
+  }
+  #information {
+    padding: 40px 0;
+}
+.information-wrapper{
+    flex-direction: column;
+}
+.information-wrapper img{
+    width: 100%;
+}
+.info h3 {
+    font-size:24px;
+       margin: 16px 0;
+    text-align: center;
+}
+.info p {
+    text-align: center;
+}
+.list-item {
+    align-items: center;
+     justify-content: center;
+     padding-top: 0;
+  }
+  .footer-wrapper {
+    text-align: center;
+    padding-top: 40px;
+    align-items: center;
+}
+.footer-icon{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
 }
 /* ------------Resopnsive end------------------------- */
