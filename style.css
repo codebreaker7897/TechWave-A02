@@ -93,11 +93,11 @@ nav{
 }
 .new{
     position:absolute;
-    top: 35%;
+    top: 33%;
     right:35%;
-    transform: translate(-35%, -35%);
+    transform: translateX( 33%, 35%);
 }
-.new p{
+.new {
     color: #1A0B2E;
     font-weight: 600;
     font-style: 1.25rem;
@@ -383,3 +383,97 @@ footer{
 
 } 
 /* ------------footer end------------------------- */
+/* ------------Resopnsive star------------------------- */
+@media screen and (max-width:576px) {
+
+    body{
+        color: #0E061A;
+    }
+    .container{
+        padding: 0 16px;
+    }
+    .navbar-wreapper {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .navbar-wreapper, .item{
+        flex-direction: column;
+        gap: 12px;
+    }
+/* ---------------banner start------------------ */
+.banner-wrapper h2{
+    font-size: 2.2rem;
+}
+.banner-wrapper .img {
+    width: 156px;
+    margin: 147px auto 0;
+}
+  .banner-wrapper .img2{
+    width:70px;
+    right:51%;
+    top: 65%;
+    transform:translate(60%,-30%);
+  }
+  .banner-wrapper p {
+    margin-top: 8px;
+    margin-right: -17px;
+     font-size: 20px;
+    font-weight: 400;
+    
+}
+.new {
+    padding: 6px 14px;
+}
+.new {
+    position: absolute;
+    top: 50%;
+    right: 30%;
+
+}
+.banner-wrapper h2 {
+    margin-top: 25px;
+}
+element.style {
+   
+}
+  .button{
+    flex-direction:column;
+    gap:12px;
+  }
+/* ---------------banner end------------------ */
+.About-wrapper h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 40px;
+    margin-bottom: 16px;
+    /* ---------------banner end------------------ */
+    /* ---------------grid end------------------ */
+}
+.all-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 40px;
+}
+ #grid h1 {
+    font-size: 2rem;
+    padding-bottom: 16px;
+}
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: " box1"
+                         "box2"
+                         "box3"
+                         "box4"
+                         "box5";
+    gap: 16px;
+}
+.grid-color img {
+    margin: 24px 0 16px 40px;
+}
+.grid-color p {
+    max-width: 352px;
+    
+}
+/* ------------Resopnsive end------------------------- */
