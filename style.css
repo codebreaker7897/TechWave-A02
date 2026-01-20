@@ -33,6 +33,8 @@ body{
     z-index: 2;
     overflow: hidden;
     transition: 0.4s;
+    border-radius: 8px;
+
 }
 .btn-primary::before{
     content: "";
@@ -41,7 +43,7 @@ body{
     left: 0;
     width: 0;
     height: 100%;
-   background: linear-gradient(
+    background: linear-gradient(
         25deg, #F7E93F, #FB09B4, #9100F8
      ); 
     z-index: -1;
@@ -250,73 +252,49 @@ nav{
 #Featured{
     background: var(--bg-color);
 }
-#Featured h1{
-     font-size: 3rem;
-        font-weight: 700;
-        color: var(--primary-color);
-        padding-top: 50px;
-         padding: 120px;
-         text-align: center;
-}
-#Featured .card2{
-    border:1px solid var(--primary-color);
-    max-width:404px;
-    background: #250D44;
-    border-radius:8px;
-    margin-left: 30px;
-   
-}
-#Featured-wrapper .all-card-two {
-    justify-content: space-between;  
-    margin-left: 20px;
-     gap: 20px;
-}
-#Featured iframe .iframe{
-   width: 100%;
-  border-radius: 0 8px 0 8px;
-}
-.card-text{
-    text-align: center;
-    width: 350px;
-}
-#Featured h3{
-     font-size: 1.5rem;
-     width: 335px;
-        font-weight: 700;
-        color: var(--primary-color);
-        padding-top: 24px;
-        
-}
-#Featured p{
-    width: 335px;
-     font-size: 1rem;
-        font-weight: 400;
-        color: var(--primary-color);
-        line-height: 24px;
-        margin-top: 24px;
-        
-      
-}
-#Featured .title {
-    gap: 6px;
-    margin-left: 15px;
-    padding-bottom: 24px;
-}
-#Featured .title img{
-    width: 20px;
-    height: 20px;
-    position: relative;
-    top: 25px;
-    left: 0;
-}
-#Featured .title p{
-     font-size: 1rem;
-        font-weight: 400;
-        color: var(--primary-color);
-        line-height: 24px;
-        margin-left: -136px;
-    }
 
+#Featured h1{
+    padding-top: 120px;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 3rem;
+}
+.Featured-wrapper{
+    justify-content: space-between;
+    gap: 30px;
+}
+.card2{
+    width: 380px;
+    background: #250D44;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+.card2 iframe{
+    width: 100%;
+}
+.card2 h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+   padding: 24px 24px 12px 24px;
+}
+.card2 p{
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0 24px 12px 24px;
+}
+.card2 .title {
+    display: flex;
+    gap: 10px;
+    padding: 0 0 12px 24px;
+  ;
+}
+.card2 .title h6{
+      color: var(--primary-color)
+}
 /* ------------Featured end------------------------- */
 /* ------------information start------------------------- */
 #information{
@@ -386,7 +364,8 @@ footer{
 
 } 
 /* ------------footer end------------------------- */
-/* ------------Resopnsive star------------------------- */
+
+/* ------------ mobile Resopnsive  star------------------------- */
 @media screen and (max-width:576px) {
 
     body{
@@ -399,10 +378,12 @@ footer{
         flex-direction: column;
         gap: 16px;
     }
-     .item{
-        flex-direction: column;
-        gap: 12px;
-    }
+    .navbar-wreapper .item {
+    gap: 17px;
+    margin-top: 6px;
+    flex-direction: column;
+    gap: 12px;
+}
 /* ---------------banner start------------------ */
 .banner-wrapper h2{
     font-size: 2.2rem;
@@ -428,10 +409,8 @@ footer{
     padding: 6px 14px;
 }
 .new {
-    position: absolute;
     top: 50%;
-    right: 30%;
-
+    right: 32%;
 }
 .banner-wrapper h2 {
     margin-top: 25px;
@@ -474,43 +453,29 @@ footer{
 }
 .grid-color p {
     max-width: 352px;
+        padding-bottom: 15px;
     }
     #Featured h1 {
-    padding: 40px;
+    padding-top: 40px;
+    font-size: 2rem;
 }
-.all-card-two{
-    flex-direction: column;
-    gap: 16px;
+.Featured-wrapper {
+   flex-direction: column;
+   align-items: center;
+   padding-bottom: 120px;
 }
-.iframe{
-    width: 400px;
+.card2 {
+    width: 100%;
+  
 }
-#Featured h3 {
-    font-size:20px;
-    padding-top: 16px;
+.card2 h3 {
+    font-size: 20px;
 }
-#Featured p {
-    width: 368px;
-    margin-top: 9px;
-}
-#Featured .title img {
-    top: 11px;
-    left: 5px;
-}
-.card2 iframe{
-    width: 400px;
-}
-#Featured h3 {
-    margin-left: 40px;
-}
-#Featured p {
-    margin-left: 25px;
-}
-#Featured .title {
-       margin-left: 19px;
-  }
   #information {
     padding: 40px 0;
+}
+#information h2 {
+    font-size: 2rem;
 }
 .information-wrapper{
     flex-direction: column;
@@ -542,4 +507,19 @@ footer{
     gap: 16px;
 }
 }
-/* ------------Resopnsive end------------------------- */
+/* ------------ Mobile Resopnsive end------------------------- */
+/* ------------ Desktop Resopnsive start------------------------- */
+@media screen and (min-width:992px) and (max-width:1400px){
+    .all-cards {
+    gap: 130px;
+    margin-left: 40px;
+}
+.grid-color {
+    width: 93%;
+    margin-left: 10px;
+}
+.grid-color img {
+    margin: 57px 0 16px 40px;
+}
+}
+/* ------------ Desktop Resopnsive end------------------------- */
