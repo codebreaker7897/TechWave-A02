@@ -375,15 +375,24 @@ footer{
         padding: 0 16px;
     }
     .navbar-wreapper {
-        flex-direction: column;
-        gap: 16px;
+        margin: 0 auto;
     }
-    .navbar-wreapper .item {
-    gap: 17px;
-    margin-top: 6px;
-    flex-direction: column;
-    gap: 12px;
+    .mobile-menu-icon {
+        display: block;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+
+  
 }
+
+    .navbar-wreapper .item {
+  display: none;
+}
+.btn-primary {
+        display: none;
+    }
+
 /* ---------------banner start------------------ */
 .banner-wrapper h2{
     font-size: 2.2rem;
@@ -509,6 +518,11 @@ footer{
 /* ------------ Mobile Resopnsive end------------------------- */
 /* ------------ Desktop Resopnsive start------------------------- */
 @media screen and (min-width:992px) and (max-width:1400px){
+
+   .mobile-menu-icon {
+    display: none;
+}
+
     .all-cards {
     gap: 130px;
     margin-left: 40px;
